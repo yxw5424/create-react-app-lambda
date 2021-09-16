@@ -67,7 +67,7 @@ body {
   color:black;
   
 }
-
+/* 
 .jumbotron h1 {
   font-weight: bold;
 }
@@ -76,7 +76,7 @@ body {
   font-style:italic;
   font-size: 12pt;
   margin-top: 20px;
-}
+} */
 
 address{
   font-size:80%;
@@ -84,7 +84,4 @@ address{
   color:#0f0f0f;
 }
 
-.navbar-light {
-  background-color: lwhite;
-}
 
