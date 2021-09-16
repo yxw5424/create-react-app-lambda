@@ -1,20 +1,22 @@
 import React, { Component } from "react"
 import "./App.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar, NavbarBrand } from 'reactstrap';
+import Main from "./components/Main";
+import { BrowserRouter } from 'react-router-dom';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Navbar dark color="primary">
-          <div className="container">
-            <NavbarBrand href="/">Yufan Wang</NavbarBrand>
-          </div>
-        </Navbar>
-      </div>
+      <BrowserRouter>
+        <div className="App">
+          <Main />
+        </div>
+      </BrowserRouter>
     );
   }
 }
 
+
+
+    
 export default App
