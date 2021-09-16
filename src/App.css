@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: 'Poppins', arial;
+}
+
 .App {
   text-align: center;
 }
@@ -33,11 +41,6 @@
 }
 
 
-body {
-  height: 100vh;
-  margin: 0;
-  font-family: 'Poppins', arial;
-}
 
 
 .row-header{
@@ -70,6 +73,6 @@ address{
   color:#0f0f0f;
 }
 
-.navbar-dark {
+.navbar-light {
   background-color: lwhite;
 }

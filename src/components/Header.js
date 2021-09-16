@@ -21,17 +21,20 @@ class Header extends Component {
     render() {
         return(
             <div>
-                <Navbar light expand="md">
+                <Navbar light expand="md" fixed="top" color="white" >
                     <div className="container">
                         <NavbarToggler onClick={this.toggleNav} />
-                        <NavbarBrand className="ml-auto" href="/">Yufan Wang</NavbarBrand>
+                        <NavbarBrand className="mr-auto" href="/" style={{minWidth: '200px'}}>Yufan Wang</NavbarBrand>
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar className="ml-auto">
-                            <NavItem>
+                            <NavItem style={{minWidth: '120px'}}>
                                 <NavLink className="nav-link"  to='/home'><span className="fa fa-home fa-lg"></span> Home</NavLink>
                             </NavItem>
-                            <NavItem>
+                            <NavItem style={{minWidth: '120px'}}>
                                 <NavLink className="nav-link" to='/project'><span className="fa fa-info fa-lg"></span> Project</NavLink>
+                            </NavItem>
+                            <NavItem style={{minWidth: '120px'}}>
+                                <NavLink className="nav-link" to='/gallery'><span className="fa fa-info fa-lg"></span> Gallery</NavLink>
                             </NavItem>
                             </Nav>
                         </Collapse>
