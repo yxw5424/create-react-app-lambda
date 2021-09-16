@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import "./App.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Main from "./components/Main";
+import Main from "./components/MainComponent";
 import { BrowserRouter } from 'react-router-dom';
 
 class App extends Component {

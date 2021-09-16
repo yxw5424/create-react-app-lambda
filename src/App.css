@@ -1,3 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: 'Poppins', arial;
+}
+
+header {
+  height: 80px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+
+.right-title {
+  text-align: right;
+}
+
+
+
+
+
+
+
+.content {
+  padding: 5em;
+}
+
+section {
+  padding: 4em 2em;
+  text-align: center;
+}
+
+.featured {
+  position: relative;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #27D2B5;
+  letter-spacing: 0.2em;
+  font-size: 0.85em;
+}
+
+.featured-title {
+  color: #372D28;
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-top: -.4em;
+  display: block;
+}
+
+.featured-desc {
+  color: black;
+  margin-top: 1em;
+  margin-bottom: 4em;
+  font-size: 0.9em;
+  line-height: 1.8em;
+  font-weight: 500;
+}
+
+.skills {
+  background-color: #FFF0BA;
+}
+
+.skills ul li {
+  background: white;
+  padding: 2em;
+  border-radius: 1em;
+  margin-bottom: -1em;
+}
+
+.skills ul li .icon-container {
+  height: 100px;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  margin: 0 auto;
+}
+
+.skills ul li .icon-container.one {
+  width: 35px;
+}
+
+.skill-title {
+  font-weight: bold;
+  color: #27D2B5;
+}
+
+.portfolio {
+  background: #F7F7F7;
+}
+
+.portfolio-container {
+  margin-bottom: 4em;
+}
+
+.portfolio-container a img {
+  border-radius: 1em;
+  margin-bottom: 2em;
+}
+
+
+
+@media only screen and (min-width: 1000px) {
+  .featured, .portfolio {
+    text-align: left;
+  }
+  .featured, .portfolio-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 40% auto;
+        grid-template-columns: 40% auto;
+  }
+  .left, .portfolio-left {
+    display: -ms-grid;
+    display: grid;
+    place-content: center;
+  }
+  .right {
+    margin-left: 5em;
+    margin-top: 5em;
+  }
+  .skills {
+    margin-top: -5em;
+    margin-bottom: -7em;
+    padding-top: 7em;
+  }
+  .skills-container ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto);
+    grid-gap: 1em;
+  }
+  .portfolio {
+    padding-top: 7em;
+  }
+  .portfolio-container img {
+    margin-left: 2em;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+ 
+  /* .nav-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 66% auto;
+        grid-template-columns: 66% auto;
+    background: unset;
+  }
+  .nav-container header {
+    background: black;
+  } */
+
+  header {
+    padding: 2em 2em 2em 4em;
+  }
+
+  section {
+    padding: 4em;
+  }
+
+
+  .content {
+    background-color: #90867F;
+    padding: 6em 8em 6em 4em;
+    text-align: left;
+  }
+  .content h1 {
+    max-width: 500px;
+    font-size: 3em;
+    line-height: 1.2em;
+  }
+ 
+  .portfolio img {
+    float: right;
+    max-width: 500px;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+
+  section {
+    padding: 10em 10em 4em 10em;
+  }
+  
+}
+
+@media only screen and (min-width: 1550px) {
+  
+  
+  section {
+    padding: 6em 20em 4em 20em;
+  }
+ 
+}
+/*# sourceMappingURL=App.css.map */
 .App {
   text-align: center;
 }
@@ -22,14 +234,6 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 
 .row-header{
@@ -62,6 +266,3 @@ address{
   color:#0f0f0f;
 }
 
-.navbar-dark {
-  background-color: lwhite;
-}
