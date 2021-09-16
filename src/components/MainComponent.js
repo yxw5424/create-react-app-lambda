@@ -33,13 +33,14 @@ class Main extends Component{
             	<CSSTransition key={this.props.location.key} classNames="page" timeout={300}> */}
         <HeaderComponent/>
           <Switch location={this.props.location}>
-						<Route path='/home' component={HomePage} />
-						<Route exact path='/projects' component={() => <ProjectPage/>} />
-            <Route exact path='/gallery' component={() => <GalleryPage/>} />
+              <Route path='/home' component={HomePage} />
+              <Route exact path='/project' component={() => <ProjectPage />} />
+              <Route exact path='/gallery' component={() => <GalleryPage />} />
+              <Redirect to="/home" />
 						{/* <Route exact path='/menu' component={() => <Menu dishes={this.props.dishes}/>}/>
 						<Route path='/menu/:dishId' component={DishWithId} />
 						<Route exact path='/contactus' component={() => <Contact postFeedback={this.props.postFeedback} resetFeedbackForm={this.props.resetFeedbackForm} />} /> */}
-						<Redirect to="/home" />
+						
           </Switch>
         <FooterComponent />      
         {/* </CSSTransition>
