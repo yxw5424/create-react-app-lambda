@@ -6,8 +6,7 @@ function Home(props) {
     return(
       <div className="container">
          <Jumbotron>
-            {/* <div className="container" style={{marginTop:"80px", marginBottom:'40px'}}> */}
-            <div className="container" >
+            <div className="container" style={{marginTop:"80px", marginBottom:'40px'}}>
                 <div className="row row-header">
                     <div className="col-12 col-sm-8" style={{textAlign:"left"}}>
                         <div className="container welcome">

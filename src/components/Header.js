@@ -29,15 +29,15 @@ class Header extends Component {
                         </NavbarBrand>
                         <Collapse isOpen={this.state.isNavOpen} navbar style={{paddingLeft:'30px', paddingRight:"20px"}}>
                             <Nav navbar className="ml-auto">
-                            <NavItem >
+                            <NavItem style={{minWidth: '120px',fontSize:'15pt',fontWeight:'500'}}>
                                 <NavLink className="nav-link"  to='/home'> Home</NavLink>
                             </NavItem>
-                            <NavItem >
+                            <NavItem style={{minWidth: '120px',fontSize:'15pt',fontWeight:'500'}}>
                                 <NavLink className="nav-link" to='/project'> Project</NavLink>
                             </NavItem>
-                            {/* <NavItem style={{minWidth: '120px',fontSize:'15pt',fontWeight:'500'}}>
+                            <NavItem style={{minWidth: '120px',fontSize:'15pt',fontWeight:'500'}}>
                                 <NavLink className="nav-link" to='/gallery'> Gallery</NavLink>
-                            </NavItem> */}
+                            </NavItem>
                             </Nav>
                         </Collapse>
                     </div>

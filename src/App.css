@@ -67,16 +67,17 @@ body {
   color:black;
   
 }
-/* 
+
 .jumbotron h1 {
   font-weight: bold;
 }
 
 .jumbotron p {
   font-style:italic;
+  font-weight:300;
   font-size: 12pt;
   margin-top: 20px;
-} */
+}
 
 address{
   font-size:80%;
