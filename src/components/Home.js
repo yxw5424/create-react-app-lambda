@@ -1,17 +1,11 @@
 import React from 'react';
+import Hero from './Hero';
 
 function Home(props) {
     return(
       <div className="container">
-        <h4>Home</h4>
-        <h4>Home</h4>
-        <h4>Home</h4>
-        <h4>Home</h4>
-        <h4>Home</h4>
-        <h4>Home</h4>
-        <h4>Home</h4>
-        <h4>Home</h4>
-        <h4>Home</h4>
+        <Hero/>
+        <h1>home</h1>
       </div>
       
     );
