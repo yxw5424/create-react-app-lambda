@@ -24,18 +24,20 @@ class Header extends Component {
                 <Navbar light expand="md" fixed="top" color="white" style={{height: "80px"}} >
                     <div className="container">
                         <NavbarToggler onClick={this.toggleNav} />
-                        <NavbarBrand className="mr-auto" href="/" style={{minWidth: '100px', fontSize:'20pt', fontWeight:'bold'}}>Yufan Wang</NavbarBrand>
+                        <NavbarBrand className="mr-auto" href="/" style={{minWidth: '100px', fontSize:'20pt', fontWeight:'bold'}}>
+                            Timothy Wang
+                        </NavbarBrand>
                         <Collapse isOpen={this.state.isNavOpen} navbar style={{paddingLeft:'30px', paddingRight:"20px"}}>
                             <Nav navbar className="ml-auto">
-                            <NavItem style={{minWidth: '120px',fontSize:'15pt',fontWeight:'500'}}>
+                            <NavItem >
                                 <NavLink className="nav-link"  to='/home'> Home</NavLink>
                             </NavItem>
-                            <NavItem style={{minWidth: '120px',fontSize:'15pt',fontWeight:'500'}}>
+                            <NavItem >
                                 <NavLink className="nav-link" to='/project'> Project</NavLink>
                             </NavItem>
-                            <NavItem style={{minWidth: '120px',fontSize:'15pt',fontWeight:'500'}}>
+                            {/* <NavItem style={{minWidth: '120px',fontSize:'15pt',fontWeight:'500'}}>
                                 <NavLink className="nav-link" to='/gallery'> Gallery</NavLink>
-                            </NavItem>
+                            </NavItem> */}
                             </Nav>
                         </Collapse>
                     </div>

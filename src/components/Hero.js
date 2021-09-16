@@ -5,7 +5,8 @@ function Hero(props) {
     return(
         <div>
         <Jumbotron>
-            <div className="container" style={{marginTop:"80px", marginBottom:'40px'}}>
+            {/* <div className="container" style={{marginTop:"80px", marginBottom:'40px'}}> */}
+            <div className="container" >
                 <div className="row row-header">
                     <div className="col-12 col-sm-8" style={{textAlign:"left"}}>
                         <div className="container welcome">
