@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Jumbotron } from 'reactstrap';
 import  projects  from './projects';
+import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import Card from './Card';
 import styled from 'styled-components';
 
@@ -9,6 +10,9 @@ const Home = () => {
 
     const [active, setActive] = useState(categories[0]);
     const [items,setItems] = useState(projects)
+    const [dropdownOpen, setDropdownOpen] = useState(false);
+
+    const toggle = () => setDropdownOpen(prevState => !prevState);
 
     const filterItem = (cateItem) => {
       const updatedItems = projects.filter((curElem)=>{
@@ -21,7 +25,7 @@ const Home = () => {
     
     const Tab = styled.button`
       
-      cursor: pointer;
+      cursor:pointer;
       opacity:0.6;
       background:white;
       border: 0;
@@ -41,7 +45,6 @@ const Home = () => {
       background:white;
       border: 0;
       outline:0;
-      
     `; 
 
     function TabGroup() {
@@ -49,14 +52,11 @@ const Home = () => {
       return(
         
         <>
-          <div className="row filter-tags" style={{alignContent:'center', alignItems:'center'}}>
-          <FilterTitle
-            className="filter-tag col-1">
-            Filter:
-          </FilterTitle>
+          
+          
           {categories.map(cate=>(
             <Tab 
-              className="filter-tag col-1"
+              className="filter-tag filters col-1"
               key={cate}
               active={active === cate}
               onClick = { () => {
@@ -73,7 +73,7 @@ const Home = () => {
               {cate}
             </Tab>
           ))}
-          </div>
+       
           </>
         
         
@@ -91,14 +91,46 @@ const Home = () => {
                             <h1>Hello, I'm Tim.</h1>
                             <h1>A Enginner & Designer</h1>
                             <h1>Welcome to my Portfolio!</h1>
-                            <p style={{fontWeight:200}}>Currently available for select projects, collaborations and consulting </p>
+                            <p class="quote">Currently available for select projects, collaborations and consulting </p>
                         </div>
                     </div>
                 </div>
             </div>
         </Jumbotron>
         <div className="container">
-          <TabGroup className="col-6" />
+          <div className="row" style={{alignContent:'center', alignItems:'center'}}>
+            <FilterTitle
+              className="filter-title col-2">
+              Filter:
+            </FilterTitle>
+            
+            <TabGroup className="col-6" />
+            
+            <Dropdown isOpen={dropdownOpen} toggle={toggle} size="sm" className="drop-down col-2">
+              <DropdownToggle caret  style={{color:"black", background:"white", border:"transparent"}}>
+                {active}
+              </DropdownToggle>
+              <DropdownMenu >
+                {categories.map(cate=>(
+                  <DropdownItem 
+                  
+                  onClick={ () => 
+                    {
+                      if (cate === "All"){
+                        setItems(projects)
+                        setActive("All")
+                      }
+                      else {
+                      filterItem(cate)
+                      }
+                    }
+                }>{cate}</DropdownItem>
+                ))}
+                
+              </DropdownMenu>
+            </Dropdown>
+         
+          </div>
           {/* main items sections*/}
           <div className="container">
             <div className="row">

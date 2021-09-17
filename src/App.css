@@ -74,7 +74,7 @@ body {
 
 .jumbotron p {
   font-style:italic;
-  font-weight:300;
+  font-weight:200;
   font-size: 12pt;
   margin-top: 20px;
 }
@@ -98,14 +98,25 @@ address{
 	border: none;
 	padding: 0;
 	font: inherit;
-	cursor: pointer;
+  cursor: pointer;
 	outline: inherit;
 }
 
-.filter-tags {
-  align-items: center;
-  align-content: center;
+.filter-title{
+  margin: 10px;
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	outline: inherit;
 }
+
+.filter-title:hover{
+  cursor:default
+}
+
+
 
 
 :root{
@@ -116,7 +127,7 @@ address{
 }
 
 .card-container {
-  padding: 30px;
+  padding: 5%;
   overflow: hidden;
   height:0;
   width:33%;
@@ -147,4 +158,21 @@ img {
 .cover-link:hover {
   text-decoration: none;
   color: black
+}
+
+
+.drop-down {
+  height: 40px;
+  background-color: transparent;
+  display: none;
+  
+}
+
+@media (max-width:400px){
+  .drop-down {
+    display:inline-block;
+  }
+  .filters{
+    display: none;
+  }
 }
