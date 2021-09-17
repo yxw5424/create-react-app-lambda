@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@babel/core": "^7.15.5",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "axios": "^0.21.4",
     "bootstrap": "^5.1.1",
     "eslint-config-react-app": "^6.0.0",

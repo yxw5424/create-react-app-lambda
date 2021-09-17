@@ -1,6 +1,7 @@
 import React from 'react';
 import { Jumbotron } from 'reactstrap'
 
+// const categories= ['art','me','robot','app']
 
 function Home(props) {
     return(
@@ -19,7 +20,18 @@ function Home(props) {
                 </div>
             </div>
         </Jumbotron>
-        <h1>home</h1>
+        <div className="container">
+          <div className="row">
+            <div  align="left">
+              <span className="col-1 filter">Filter:</span>
+              <button className="col-1 filter-tag">art</button>
+              <button className="col-1 filter-tag">me</button>
+              <button className="col-1 filter-tag">robot</button>
+              <button className="col-1 filter-tag">app</button>
+            </div>
+          </div>
+
+        </div>
       </div>
       
     );

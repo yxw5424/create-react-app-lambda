@@ -5,38 +5,60 @@ import { NavLink } from 'react-router-dom';
 class Header extends Component {
     constructor(props) {
         super(props);
-    
-        this.toggleNav = this.toggleNav.bind(this);
-        this.state = {
-          isNavOpen: false
-        };
-      }
 
-      toggleNav() {
+        this.toggle = this.toggle.bind(this);
+        this.closeNavbar = this.closeNavbar.bind(this);
+        this.handleClickOutside = this.handleClickOutside.bind(this);
+
+        this.state = {
+            isOpen: false,
+        };
+    }
+    componentWillMount() {
+        document.addEventListener('mousedown', this.handleClickOutside);
+    }
+    componentWillUnmount() {
+        document.removeEventListener('mousedown', this.handleClickOutside);
+    }
+
+    toggle() {
         this.setState({
-          isNavOpen: !this.state.isNavOpen
+            isOpen: !this.state.isOpen
         });
-      }
+    }
+    closeNavbar() {
+        this.setState({
+            isOpen: false
+        });
+    }
+    handleClickOutside(event) {
+        const t = event.target;
+        if (this.state.isOpen && !t.classList.contains('navbar-toggler')) {
+            this.closeNavbar();
+        }
+    }
 
     render() {
         return(
-            <div>
+            <div ref={(node) => this.setWrapperRef = node}>
+                
                 <Navbar light expand="md" fixed="top" color="white" style={{height: "80px"}} >
                     <div className="container">
-                        <NavbarToggler onClick={this.toggleNav} />
+                        
                         <NavbarBrand className="mr-auto" href="/" style={{minWidth: '100px', fontSize:'20pt', fontWeight:'bold'}}>
                             Timothy Wang
                         </NavbarBrand>
-                        <Collapse isOpen={this.state.isNavOpen} navbar style={{paddingLeft:'30px', paddingRight:"20px" ,background:'white'}}>
+                        <NavbarToggler onClick={this.toggle} />
+                        <Collapse isOpen={this.state.isOpen} navbar style={{paddingLeft:'30px', paddingRight:"20px" ,background:'white'}} >
                             <Nav navbar className="ml-auto">
                             <NavItem style={{minWidth: '120px',fontSize:'15pt',fontWeight:'500'}}>
-                                <NavLink className="nav-link"  to='/home' onClick={this.toggleNav}> Home</NavLink>
+                                <NavLink className="nav-link"  to='/home' onClick={this.closeNavbar}> Home</NavLink>
                             </NavItem>
                             <NavItem style={{minWidth: '120px',fontSize:'15pt',fontWeight:'500'}}>
-                                <NavLink className="nav-link" to='/project' onClick={this.toggleNav}> Project</NavLink>
+                                <NavLink className="nav-link" to='/project' onClick={this.closeNavbar}> Project</NavLink>
                             </NavItem>
                             <NavItem style={{minWidth: '120px',fontSize:'15pt',fontWeight:'500'}}>
-                                <NavLink className="nav-link" to='/gallery' onClick={this.toggleNav}> Gallery</NavLink>
+                                <NavLink className="nav-link" to='/gallery' onClick={this.closeNavbar}> Gallery</NavLink>
                             </NavItem>
                             </Nav>
                         </Collapse>
@@ -48,3 +70,4 @@ class Header extends Component {
 }
 
 export default Header
+
