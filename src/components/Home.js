@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Jumbotron } from 'reactstrap';
 import  projects  from './projects';
+import Card from './Card';
 import styled from 'styled-components';
 
 const Home = () => {
@@ -26,7 +27,7 @@ const Home = () => {
       border: 0;
       outline: 0;
       border-bottom: 2px solid transparent;
-      transition: 5s;
+      transition: ease border-bottom 250ms;
       ${({active})=>
       active &&
       `
@@ -90,7 +91,7 @@ const Home = () => {
                             <h1>Hello, I'm Tim.</h1>
                             <h1>A Enginner & Designer</h1>
                             <h1>Welcome to my Portfolio!</h1>
-                            <p>Currently available for select projects, collaborations and consulting </p>
+                            <p style={{fontWeight:200}}>Currently available for select projects, collaborations and consulting </p>
                         </div>
                     </div>
                 </div>
@@ -102,18 +103,18 @@ const Home = () => {
           <div className="container">
             <div className="row">
               <div className="col-11 mx-auto">
-                <div className="row my-5">
+                <div className="row">
                   {
                     items.map((project)=>{
-                      const { id, image, category, name } = project;
+                      const { id, image, category, name, link,description} = project;
                       return (
-                        <div key={id}>
-                          
-                          <h1> {name}</h1>
-                          <h1>{image}</h1>
-                          <h1>{category}</h1>
-                          
-                        </div>
+                        <Card key={id}
+                          image={image}
+                          category={category}
+                          name={name}
+                          link={link}
+                          description={description}
+                        />
                       )
                     })
                   }

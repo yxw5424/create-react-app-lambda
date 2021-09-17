@@ -106,12 +106,45 @@ address{
   align-items: center;
   align-content: center;
 }
-/* button {
-	background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
-} */
+
+
+:root{
+  --clr-neutral-900:hsl(207,19%,9%);
+  --clr-neutral-100:hsl(0,0%,100%);
+  --clr-neutral-400:hsl(142, 90%, 61%);
+
+}
+
+.card-container {
+  padding: 30px;
+  overflow: hidden;
+  height:0;
+  width:33%;
+  padding-bottom:33%;
+}
+.card-title {
+  position:absolute;
+  top: 20px;
+  font-size: 16pt;
+  font-weight: 600;
+  color:#0f0f0f
+}
+
+
+img {
+  width: 100%;
+  height: auto;
+  
+}
+
+.card-link {
+  text-decoration: none;
+  font-size: 12pt;
+  color: #0f0f0f;
+}
+
+
+.cover-link:hover {
+  text-decoration: none;
+  color: black
+}
