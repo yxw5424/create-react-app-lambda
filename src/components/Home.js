@@ -24,7 +24,9 @@ const Home = () => {
       opacity:0.6;
       background:white;
       border: 0;
-      outline:0;
+      outline: 0;
+      border-bottom: 2px solid transparent;
+      transition: 5s;
       ${({active})=>
       active &&
       `
