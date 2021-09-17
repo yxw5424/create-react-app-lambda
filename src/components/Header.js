@@ -46,7 +46,7 @@ class Header extends Component {
                     <div className="container">
                         
                         <NavbarBrand className="mr-auto" href="/" style={{minWidth: '100px', fontSize:'20pt', fontWeight:'bold'}}>
-                            Timothy Wang
+                            Tim Wang
                         </NavbarBrand>
                         <NavbarToggler onClick={this.toggle} />
                         <Collapse isOpen={this.state.isOpen} navbar style={{paddingLeft:'30px', paddingRight:"20px" ,background:'white'}} >
