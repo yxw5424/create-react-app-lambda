@@ -102,6 +102,10 @@ address{
 	outline: inherit;
 }
 
+.filter-tags {
+  align-items: center;
+  align-content: center;
+}
 /* button {
 	background: none;
 	color: inherit;

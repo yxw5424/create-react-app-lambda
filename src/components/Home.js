@@ -33,12 +33,24 @@ const Home = () => {
       `
       }
     `;  
+    const FilterTitle = styled.button`
+      font-weight: bold;
+      background:white;
+      border: 0;
+      outline:0;
+      
+    `; 
 
     function TabGroup() {
       
       return(
         
         <>
+          <div className="row filter-tags" style={{alignContent:'center', alignItems:'center'}}>
+          <FilterTitle
+            className="filter-tag col-1">
+            Filter:
+          </FilterTitle>
           {categories.map(cate=>(
             <Tab 
               className="filter-tag col-1"
@@ -58,6 +70,7 @@ const Home = () => {
               {cate}
             </Tab>
           ))}
+          </div>
           </>
         
         
@@ -82,13 +95,7 @@ const Home = () => {
             </div>
         </Jumbotron>
         <div className="container">
-          <div className="row" algin="left">
-           
-              <span className="col-1 filter">Filter:</span>
-              
-              <TabGroup className="col-6" />
-
-          </div>
+          <TabGroup className="col-6" />
           {/* main items sections*/}
           <div className="container">
             <div className="row">
