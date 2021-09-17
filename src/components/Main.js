@@ -4,6 +4,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Project from "./Project";
 import Gallery from "./Gallery";
+import About from "./About"
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 class Main extends Component {
@@ -23,6 +24,7 @@ class Main extends Component {
               <Route path='/home' component={HomePage} />
               <Route exact path='/project' component={() => <Project />} />
               <Route exact path='/gallery' component={() => <Gallery />} />
+              <Route exact path='/about' component={() => <About />} />
               <Redirect to="/home" />
           </Switch>
         </div>

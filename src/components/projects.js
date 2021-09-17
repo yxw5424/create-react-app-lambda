@@ -9,7 +9,7 @@ const projects = [
       id:2,
       image:"n/a",
       category:"M.E",
-      name:'thermodynamics'
+      name:'thermodynamicsssssssssssssss'
     },
     {
       id:3,

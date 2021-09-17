@@ -6,16 +6,17 @@ function Card({name,description,image,category,link}) {
         
       <div class="col-4 card-container">
         <div class="card-content">
-            <a class="card-link" href="https://picsum.photos/200/30"  >
-                <img src="https://picsum.photos/200/300" alt="Girl in a jacket" />
+            <div class="item">
+                <a class="" href="https://picsum.photos/200/30"  >
+                <img src="https://picsum.photos/200/300" alt ={name}/>
+                
+                <div class="overlay"> </div> 
                 <h2 class="card-title">{name}</h2>
-                <p class="card-body">{description}</p>
             {/* <a href="#" class="card-button">Learn More</a> */}
-            </a>
+                </a>
+                </div>
         </div>
       </div>
-      
-
     );
 }
 

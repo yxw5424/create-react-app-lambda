@@ -60,6 +60,9 @@ class Header extends Component {
                             <NavItem style={{minWidth: '120px',fontSize:'15pt',fontWeight:'500'}}>
                                 <NavLink className="nav-link" to='/gallery' onClick={this.closeNavbar}> Gallery</NavLink>
                             </NavItem>
+                            <NavItem style={{minWidth: '120px',fontSize:'15pt',fontWeight:'500'}}>
+                                <NavLink className="nav-link" to='/about' onClick={this.closeNavbar}> About</NavLink>
+                            </NavItem>
                             </Nav>
                         </Collapse>
                     </div>
