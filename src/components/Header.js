@@ -27,16 +27,16 @@ class Header extends Component {
                         <NavbarBrand className="mr-auto" href="/" style={{minWidth: '100px', fontSize:'20pt', fontWeight:'bold'}}>
                             Timothy Wang
                         </NavbarBrand>
-                        <Collapse isOpen={this.state.isNavOpen} navbar style={{paddingLeft:'30px', paddingRight:"20px"}}>
+                        <Collapse isOpen={this.state.isNavOpen} navbar style={{paddingLeft:'30px', paddingRight:"20px" ,background:'white'}}>
                             <Nav navbar className="ml-auto">
                             <NavItem style={{minWidth: '120px',fontSize:'15pt',fontWeight:'500'}}>
-                                <NavLink className="nav-link"  to='/home'> Home</NavLink>
+                                <NavLink className="nav-link"  to='/home' onClick={this.toggleNav}> Home</NavLink>
                             </NavItem>
                             <NavItem style={{minWidth: '120px',fontSize:'15pt',fontWeight:'500'}}>
-                                <NavLink className="nav-link" to='/project'> Project</NavLink>
+                                <NavLink className="nav-link" to='/project' onClick={this.toggleNav}> Project</NavLink>
                             </NavItem>
                             <NavItem style={{minWidth: '120px',fontSize:'15pt',fontWeight:'500'}}>
-                                <NavLink className="nav-link" to='/gallery'> Gallery</NavLink>
+                                <NavLink className="nav-link" to='/gallery' onClick={this.toggleNav}> Gallery</NavLink>
                             </NavItem>
                             </Nav>
                         </Collapse>
