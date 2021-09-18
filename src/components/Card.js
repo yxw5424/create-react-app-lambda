@@ -11,7 +11,9 @@ function Card({name,description,image,category,link}) {
                 <img src="https://picsum.photos/200/300" alt ={name}/>
                 
                 <div class="overlay"> </div> 
-                <h2 class="card-title">{name}</h2>
+                <div class="container">
+                <h2 class="card-title text-wrap text-break">{name}</h2>
+                </div>
             {/* <a href="#" class="card-button">Learn More</a> */}
                 </a>
                 </div>
