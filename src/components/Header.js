@@ -45,11 +45,12 @@ class Header extends Component {
                 <Navbar light expand="md" fixed="top" color="white" style={{height: "80px"}} >
                     <div className="container">
                         
-                        <NavbarBrand className="mr-auto" href="/" style={{minWidth: '100px', fontSize:'20pt', fontWeight:'bold'}}>
+                        <NavbarBrand className="mr-auto brand" href="/" style={{minWidth: '100px', fontSize:'20pt', fontWeight:'bold', marginLeft:"40px"}}>
                             Tim Wang
                         </NavbarBrand>
+                        
                         <NavbarToggler onClick={this.toggle} />
-                        <Collapse isOpen={this.state.isOpen} navbar style={{paddingLeft:'30px', paddingRight:"20px" ,background:'white'}} >
+                        <Collapse  isOpen={this.state.isOpen} navbar style={{paddingLeft:'30px', paddingRight:"20px" ,background:'white'}} >
                             <Nav navbar className="ml-auto">
                             <NavItem style={{minWidth: '120px',fontSize:'15pt',fontWeight:'500'}}>
                                 <NavLink className="nav-link"  to='/home' onClick={this.closeNavbar}> Home</NavLink>
