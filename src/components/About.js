@@ -4,9 +4,9 @@ import { SocialIcon } from 'react-social-icons';
 
 const Portrait =() => {
   return(
-    <div class="col-12 col-sm-6 col-md-6">
-      <div class="card-content">          
-        <img src="portrait.jpeg" alt ="portrait"/>
+    <div class="col-12 col-sm-12 col-md-6" >
+      <div class="card-content" >          
+        <img src="portrait.jpeg"  alt ="portrait"/>
       </div>
     </div>
   )
@@ -14,7 +14,7 @@ const Portrait =() => {
 
 const AboutText=()=>{
   return(
-    <div class="col-12 col-sm-6 col-md-6">
+    <div class="col-12 col-sm-12 col-md-6">
       <div class="container" >          
         <h1 className="about-title">About me</h1>
         <div className="about-container">
