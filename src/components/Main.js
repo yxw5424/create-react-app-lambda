@@ -7,7 +7,9 @@ import Gallery from "./Gallery";
 import About from "./About"
 import { Switch, Route, Redirect } from 'react-router-dom';
 
+
 class Main extends Component {
+  
   render() {
     const HomePage = () => {
         return(
@@ -19,8 +21,8 @@ class Main extends Component {
       <div>
         <Header/>
       
-        <div className='container' style={{marginTop:'80px'}}>
-          <Switch>
+        <div className='container' style={{marginTop:'80px'}} >
+          <Switch >
               <Route path='/home' component={HomePage} />
               <Route exact path='/robotproject' component={() => <RobotProject />} />
               <Route exact path='/gallery' component={() => <Gallery />} />
