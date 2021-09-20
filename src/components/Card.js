@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 function Card({name,link,image,key}) {
     return(
@@ -7,7 +8,7 @@ function Card({name,link,image,key}) {
       <div class="col-4 card-container" id={key}>
         <div class="card-content" >
             <div class="item"  >
-                <a  href={link}  >
+                <NavLink  to={link}  >
                 <img src={image} alt ={name}  />
                 
                 <div class="overlay"> </div> 
@@ -15,7 +16,7 @@ function Card({name,link,image,key}) {
                 <h2 class="card-title text-wrap text-break">{name}</h2>
                 </div>
             {/* <a href="#" class="card-button">Learn More</a> */}
-                </a>
+                </NavLink>
                 </div>
         </div>
       </div>
