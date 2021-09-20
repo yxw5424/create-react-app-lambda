@@ -4,7 +4,8 @@ import Header from "./Header";
 import Footer from "./Footer";
 import RobotProject from "./RobotProject";
 import Gallery from "./Gallery";
-import About from "./About"
+import About from "./About";
+import LatticeProject from "./LatticeProject";
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 
@@ -24,9 +25,10 @@ class Main extends Component {
         <div className='container' style={{marginTop:'80px'}} >
           <Switch >
               <Route path='/home' component={HomePage} />
-              <Route exact path='/robotproject' component={() => <RobotProject />} />
               <Route exact path='/gallery' component={() => <Gallery />} />
               <Route exact path='/about' component={() => <About />} />
+              <Route exact path='/robotproject' component={() => <RobotProject />} />
+              <Route exact path='/latticeproject' component={() => <LatticeProject />} />
               <Redirect to="/home" />
           </Switch>
         </div>

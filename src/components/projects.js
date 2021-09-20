@@ -8,10 +8,10 @@ const projects = [
     },
     {
       id:2,
-      image:"https://picsum.photos/200/300",
+      image:"phone.jpg",
       category:"M.E",
-      name:'thermodynamicsssssssssssssss',
-      link:'/robotproject'
+      name:'Lattice Design',
+      link:'/latticeproject'
     },
     {
       id:3,
@@ -23,7 +23,7 @@ const projects = [
     {
       id:4,
       image:"https://picsum.photos/200/300",
-      category:"Robotics",
+      category:"Robot",
       name:'HUB',
       link:'/robotproject'
     },

@@ -8,7 +8,7 @@ const robotProject =  {
   description:"This is a hands-on project that I designed a dancing robot from a to z, including kinematics, industrial design, manufacturing, electronics, simulation and programming. You are welcome to take a glance at my accomplishments and enjoy the video of the final product. "
 }
 
-function Project() {
+function RobotProject() {
     return(
       <div className="container">
         <Rowheader title={robotProject.title} img={robotProject.img} alt={robotProject.alt} description={robotProject.description}/>
@@ -25,4 +25,4 @@ function Project() {
     );
 }
 
-export default Project;   
+export default RobotProject;   
