@@ -138,14 +138,14 @@ const Home = () => {
                 <div className="row">
                   {
                     items.map((project)=>{
-                      const { id, image, category, name, link,description} = project;
+                      const { id, image, category, name, link } = project;
                       return (
                         <Card key={id}
                           image={image}
                           category={category}
                           name={name}
                           link={link}
-                          description={description}
+                          
                         />
                       )
                     })
