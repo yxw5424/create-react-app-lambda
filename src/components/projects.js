@@ -8,7 +8,7 @@ const projects = [
     },
     {
       id:2,
-      image:"phone.jpg",
+      image:"lattice/phone.jpg",
       category:"M.E",
       name:'Lattice Design',
       link:'/latticeproject'
