@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import  ImageLoader  from 'react-loading-image';
 
 function Card({name,link,image,key}) {
     return(
@@ -9,7 +10,8 @@ function Card({name,link,image,key}) {
         <div class="card-content" >
             <div class="item"  >
                 <NavLink  to={link}  >
-                <img src={image} alt ={name}  />
+                <ImageLoader src={image} alt ={name} loading={() => <div>Loading...</div>}
+              error={() => <div>Error</div>}  />
                 
                 <div class="overlay"> </div> 
                 <div class="container">
