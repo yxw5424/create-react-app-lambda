@@ -1,8 +1,8 @@
 import React from 'react';
 import Rowheader from './RowHeader';
 import { Media, Button } from 'reactstrap';
-import { SRLWrapper } from "simple-react-lightbox";
-import  ImageLoader  from 'react-loading-image';
+import MyImage from './MyImage';
+import { SRLWrapper } from 'simple-react-lightbox';
 
 const ref =  {
   title:"Lattice Phone Case",
@@ -65,17 +65,16 @@ function LatticeProject() {
             <Media className="paragraph">
             Firstly, I imported the stl file, but the stl is a mesh file and nTop require a CAD body to run, so we need to re-mesh the stl file and transfer it into an implicit body. Workflow and the configuration of the ramp block is shown in Fig1 & Fig2: 
             </Media>
-            <ImageLoader src={elements[0].src} alt={elements[0].alt} className="center" loading={() => <div>Loading...</div>}
-              error={() => <div>Error</div>}/>  
+            <MyImage src={elements[0].src} alt={elements[0].alt} className="center" />  
             <Media className="figure-caption"> Figure 1. The workflow of the ntopology. </Media>
-            <img  src={elements[1].src} alt={elements[1].alt}  class="center" />    
+            <MyImage  src={elements[1].src} alt={elements[1].alt}  className="center" />    
             <Media className="figure-caption"> Figure 2. configuration of the ramp </Media>
             <Media className='subtitle'>
             Original & Result
             </Media>
-            <img  src={elements[2].src} alt={elements[2].alt}  class="center" />  
+            <MyImage  src={elements[2].src} alt={elements[2].alt}  className="center" />  
             <Media className="figure-caption"> Figure 3. The original design of the phone case</Media>
-            <img  src={elements[3].src} alt={elements[3].alt}  class="center" />    
+            <MyImage  src={elements[3].src} alt={elements[3].alt}  className="center" />    
             <Media className="figure-caption"> Figure 4. The new design with lattice structure. </Media>
           </Media>
         </div>
@@ -84,7 +83,7 @@ function LatticeProject() {
             <Media heading>
             Section II: Renderings
             </Media>
-            <img   src={elements[4].src} alt={elements[4].alt}   class="center" style={{width:'70%'}}/>    
+            <MyImage   src={elements[4].src} alt={elements[4].alt}   className="center" style={{width:'70%'}}/>    
             <Media className="figure-caption"> Figure 5. Renderings with screen </Media>          </Media>
         </div>
         <Button style={{margin:'30px'}} outline  color="secondary" onClick={()=>window.scrollTo(0, 0)}>Back To Top</Button>
