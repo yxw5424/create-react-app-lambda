@@ -36,7 +36,7 @@ function About() {
           <AboutText/>
         </div>
         <div class=" container" style={{padding:"10%"}}>
-            <SocialIcon bgColor="black" class="social-icon" url="https://linkedin.com/in/jaketrent" style={{height:25,width:25}}/>
+            <SocialIcon bgColor="black" class="social-icon" url="https://www.linkedin.com/in/yufanwang97" style={{height:25,width:25}}/>
             <SocialIcon bgColor="black" class="social-icon" url="https://youtube.com" style={{height:25,width:25}}/>
             <SocialIcon bgColor="black" class="social-icon" url="https://wechat.com" style={{height:25,width:25}}/>
             <SocialIcon bgColor="black" class="social-icon" url="mailto:yxw5424@hotmail.com" style={{height:25,width:25}}/>
