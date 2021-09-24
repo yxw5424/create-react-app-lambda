@@ -5,7 +5,7 @@ import { Spinner } from 'reactstrap';
 
 function MyImage({src,alt,className,id,style}){
     return(
-    <ImageLoader className={className} src={src} alt ={alt} loading={() => <Spinner/>}
+    <ImageLoader className={className} src={src} alt ={alt} loading={() => <Spinner type="grow" color="dark" children={''}/>}
               error={() => <div>Error</div>}  id={id} style={style}/>
     )
 }
