@@ -2,6 +2,7 @@ import React from 'react';
 import Rowheader from './RowHeader';
 import { Media, Button } from 'reactstrap';
 import { SRLWrapper } from "simple-react-lightbox";
+import MyImg from './MyImg';
 
 const ref =  {
   title:"Lattice Phone Case",
@@ -50,6 +51,7 @@ const elements = [
 ]
 
 function LatticeProject() {
+  
     return(
       <SRLWrapper elements={elements}>
       <div className="container">
@@ -63,7 +65,7 @@ function LatticeProject() {
             <Media className="paragraph">
             Firstly, I imported the stl file, but the stl is a mesh file and nTop require a CAD body to run, so we need to re-mesh the stl file and transfer it into an implicit body. Workflow and the configuration of the ramp block is shown in Fig1 & Fig2: 
             </Media>
-            <img  src={elements[0].src} alt={elements[0].alt}  class="center" />  
+            <MyImg  src={elements[0].src} alt={elements[0].alt} />  
             <Media className="figure-caption"> Figure 1. The workflow of the ntopology. </Media>
             <img  src={elements[1].src} alt={elements[1].alt}  class="center" />    
             <Media className="figure-caption"> Figure 2. configuration of the ramp </Media>
