@@ -15,7 +15,7 @@ const DrawText = ({word,IsActive,id}) => {
             <div className='row' >
             {word.split('').map((letter)=>{
                 return(
-                <div  style={{ color: IsActive?'#00ffcc':'#d4d4d4', fontWeight: IsActive?'600':'400',height:unilenstr,width:unilenstr,textAlign:'center'}}>
+                <div  style={{ color: IsActive?'#ff8400':'#d4d4d4', fontWeight: IsActive?'600':'200',height:unilenstr,width:unilenstr,textAlign:'center'}}>
                     {letter}
                 </div> 
                 )
