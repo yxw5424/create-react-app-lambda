@@ -15,7 +15,7 @@ const DrawText = ({word,IsActive,id}) => {
             <div className='row' >
             {word.split('').map((letter)=>{
                 return(
-                <div  style={{ color: IsActive?'white':'#2b2b2b',height:unilenstr,width:unilenstr,textAlign:'center'}}>
+                <div  style={{ color: IsActive?'#00ffcc':'#d4d4d4', fontWeight: IsActive?'600':'400',height:unilenstr,width:unilenstr,textAlign:'center'}}>
                     {letter}
                 </div> 
                 )
@@ -45,7 +45,7 @@ function Clock(){
     return(
         <div>
             it is a clock
-            <div className='justify-content-center align-self-center mx-auto' style={{backgroundColor:'black', width:containerstr,height:containerstr ,paddingTop:unilens}}>
+            <div className='justify-content-center align-self-center mx-auto shadow mb-5 rounded' style={{backgroundColor:'white', width:containerstr,height:containerstr ,paddingTop:unilens}}>
             { lines.map((line)=>{
                 return(
                     <div >
