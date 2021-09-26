@@ -2,7 +2,7 @@ var today = new Date();
 var hrs= today.getHours() 
 var hhr = hrs > 12? hrs-12 : hrs
 var mins=today.getMinutes();
-console.log(hhr)
+
 const updatehour = (hr) => {
     if ((hr === hhr && mins < 45) || (hr === hhr+1 && mins >= 45)){
     return true
