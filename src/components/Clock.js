@@ -1,7 +1,12 @@
 import React from 'react';
 import lines from './lines';
+var crypto = require("crypto");
 
 
+function getRandomString(s) {
+    var result = crypto.randomBytes(s).toString('hex');
+    return result;
+}
 
 const DrawText = ({ele,unilens}) => {
     const unilen = unilens
@@ -13,7 +18,7 @@ const DrawText = ({ele,unilens}) => {
             <div className='row'  >
             {ele.word.split('').map((letter)=>{
                 return(
-                <div class="clock-letter" style={{ color: ele.IsActive?'#ff8400':'#d4d4d4', fontWeight: ele.IsActive?'600':'200', height:unilenstr, width:unilenstr,textAlign:'center',fontSize:unilen >=40? "14pt":"8pt"}}>
+                <div key={getRandomString(20)} style={{ color: ele.IsActive?'#ff8400':'#d4d4d4', fontWeight: ele.IsActive?'600':'200', height:unilenstr, width:unilenstr,textAlign:'center',fontSize:unilen >=40? "14pt":"8pt"}}>
                     {letter}
                 </div> 
                 )
@@ -31,7 +36,7 @@ function DrawLine({line,containerstr,unilen}){
         <div  className="row justify-content-center align-self-center mx-auto" style={{containerstr}}>
             {
                 line.map((ele)=>{
-                    return  <DrawText ele={ele} unilens={unilen}/>
+                    return  <DrawText key={getRandomString(10)} ele={ele} unilens={unilen}/>
                    
                 })
             }
@@ -66,7 +71,7 @@ class Clock extends React.Component{
             { lines.map((line)=>{
                 
                 return(
-                    <div >
+                    <div key={getRandomString(15)}>
                     {<DrawLine line={line} unilen={unilens} containerstr={containerstr}/>}
                     </div>
                 )
