@@ -89,8 +89,13 @@ const line5=[
         id:51
     },
     {
-        word:'ERUNINE',
+        word:'ERU',
         IsActive:false,
+        id:52
+    },
+    {
+        word:'NINE',
+        IsActive:updatehour(9),
         id:52
     },
     
