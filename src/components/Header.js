@@ -14,7 +14,7 @@ class Header extends Component {
             isOpen: false,
         };
     }
-    componentWillMount() {
+    UNSAFE_componentWillMount() {
         document.addEventListener('mousedown', this.handleClickOutside);
     }
     componentWillUnmount() {

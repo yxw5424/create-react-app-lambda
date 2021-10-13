@@ -4,8 +4,8 @@ import { SocialIcon } from 'react-social-icons';
 
 const Portrait =() => {
   return(
-    <div class="col-12 col-sm-12 col-md-6" >
-      <div class="card-content" >          
+    <div className="col-12 col-sm-12 col-md-6" >
+      <div className="card-content" >          
         <img src="portrait.jpeg"  alt ="portrait"/>
       </div>
     </div>
@@ -14,8 +14,8 @@ const Portrait =() => {
 
 const AboutText=()=>{
   return(
-    <div class="col-12 col-sm-12 col-md-6">
-      <div class="container" >          
+    <div className="col-12 col-sm-12 col-md-6">
+      <div className="container" >          
         <h1 className="about-title">About me</h1>
         <div className="about-container">
         <p className="about-para">As a graduate student in mechanical engineering, my mission is to create safe, easy-to-use products to help users accomplish tasks efficiently.</p>
@@ -35,11 +35,11 @@ function About() {
           <Portrait/>
           <AboutText/>
         </div>
-        <div class=" container" style={{padding:"10%"}}>
-            <SocialIcon bgColor="black" class="social-icon" url="https://www.linkedin.com/in/yufanwang97" style={{height:25,width:25}}/>
-            <SocialIcon bgColor="black" class="social-icon" url="https://youtube.com" style={{height:25,width:25}}/>
-            <SocialIcon bgColor="black" class="social-icon" url="https://wechat.com" style={{height:25,width:25}}/>
-            <SocialIcon bgColor="black" class="social-icon" url="mailto:yxw5424@hotmail.com" style={{height:25,width:25}}/>
+        <div className=" container" style={{padding:"10%"}}>
+            <SocialIcon bgColor="black" className="social-icon" url="https://www.linkedin.com/in/yufanwang97" style={{height:25,width:25}}/>
+            <SocialIcon bgColor="black" className="social-icon" url="https://youtube.com" style={{height:25,width:25}}/>
+            <SocialIcon bgColor="black" className="social-icon" url="https://wechat.com" style={{height:25,width:25}}/>
+            <SocialIcon bgColor="black" className="social-icon" url="mailto:yxw5424@hotmail.com" style={{height:25,width:25}}/>
         </div>
       </div>
     );
