@@ -89,7 +89,7 @@ const Home = () => {
                     <div className="col-12 col-sm-8" style={{textAlign:"left"}}>
                         <div className="container">
                             <h1>Hello, I'm Tim.</h1>
-                            <h1>A Enginner & Designer</h1>
+                            <h1>Engineer & Designer</h1>
                             <h1>Welcome to my Portfolio!</h1>
                             <p class="quote">Currently available for select projects, collaborations and consulting </p>
                         </div>
