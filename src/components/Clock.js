@@ -2,12 +2,13 @@ import React from 'react';
 import lines from './lines';
 var crypto = require("crypto");
 
-
+// get key for list item
 function getRandomString(s) {
     var result = crypto.randomBytes(s).toString('hex');
     return result;
 }
 
+// draw each word
 const DrawText = ({ele,unilens}) => {
     const unilen = unilens
     const length = ele.word.length*unilen
@@ -29,7 +30,7 @@ const DrawText = ({ele,unilens}) => {
     )
 }
 
-
+// draw lines
 function DrawLine({line,containerstr,unilen}){
     
     return(
@@ -43,6 +44,8 @@ function DrawLine({line,containerstr,unilen}){
         </div>
     )
 }
+
+// assemble lines
 class Clock extends React.Component{
     constructor(props) {
         super(props);
@@ -62,11 +65,11 @@ class Clock extends React.Component{
      } 
     render() {
         const { windowWidth } = this.state; 
-        const unilens = windowWidth >550 ? 40:25
+        const unilens = windowWidth >550 ? 40:25  // responsive
         const containerstr = (unilens*12).toString()+'px'
     return(
         <div>
-            it is a clock 
+            <h4 style={{padding:"10px"}}>This is a clock</h4> 
             <div className='justify-content-center align-self-center mx-auto shadow mb-5 rounded' style={{backgroundColor:'white', width:containerstr, height:containerstr ,paddingTop:unilens}}>
             { lines.map((line)=>{
                 

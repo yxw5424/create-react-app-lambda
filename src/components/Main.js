@@ -6,6 +6,7 @@ import Gallery from "./Gallery";
 import About from "./About";
 import RobotProject from "./RobotProject";
 import LatticeProject from "./LatticeProject";
+import Journal from './Journal'
 
 import { Switch, Route, Redirect } from 'react-router-dom';
 
@@ -30,6 +31,7 @@ class Main extends Component {
               <Route exact path='/about' component={() => <About />} />
               <Route exact path='/robotproject' component={() => <RobotProject />} />
               <Route exact path='/latticeproject' component={() => <LatticeProject />} />
+              <Route exact path='/journal' component={() => <Journal />} />
               <Redirect to="/home" />
           </Switch>
         </div>
