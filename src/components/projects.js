@@ -15,15 +15,15 @@ const projects = [
     },
     {
       id:3,
-      image:"https://picsum.photos/200/300",
-      category:"Robot",
+      image:"Robotics/robotcover.PNG",
+      category:"M.E",
       name:'robotics studio',
       link:'/robotproject'
     },
     {
       id:4,
       image:"https://picsum.photos/200/300",
-      category:"Robot",
+      category:"M.E",
       name:'HUB',
       link:'/robotproject'
     },

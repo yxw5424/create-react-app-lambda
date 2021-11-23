@@ -6,7 +6,7 @@ import Card from './Card';
 import styled from 'styled-components';
 
 const Home = () => {
-    const categories= ['All','Art','M.E','Robot']
+    const categories= ['All','Art','M.E']
 
     const [active, setActive] = useState(categories[0]);
     const [items,setItems] = useState(projects)

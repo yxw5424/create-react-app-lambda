@@ -355,3 +355,19 @@ justify-content:space-between;}
     max-width: 100%;
   }
 }
+
+.floating-menu {
+  font-family: sans-serif;
+  background: yellowgreen;
+  padding: 5px;;
+  width: auto;
+  z-index: 100;
+  position: fixed;
+}
+.floating-menu a, 
+.floating-menu h3 {
+  font-size: 0.9em;
+  display: block;
+  margin: 0 0.5em;
+  color: white;
+}
