@@ -141,7 +141,7 @@ function RobotProject() {
         
         <div class="row row-content " style={{textAlign:"left",}}> 
           <Media body>
-            <h1 ><a  href="/#" name = "section 1">Section I: Sketches</a></h1>
+            <h1 id="section 1">Section I: Sketches</h1>
             <Media className='subtitle'>
             Sketches in Procreate
             </Media>
@@ -164,7 +164,7 @@ function RobotProject() {
         </div>
         <div class="row row-content" style={{textAlign:"left"}}> 
           <Media body>
-            <h1><a href="/#" name = "section 2">Section II: CAD</a></h1>
+            <h1 id="section 2">Section II: CAD</h1>
               <Media className='subtitle'>
               Preliminary Designs
               </Media>
@@ -194,7 +194,7 @@ function RobotProject() {
 
         <div class="row row-content" style={{textAlign:"left"}}> 
           <Media body>
-            <h1><a  href="/#" name = "section 3">Section III: 3D Printed and Assembled</a></h1>
+            <h1 id="section 3">Section III: 3D Printed and Assembled</h1>
               <Media className='subtitle'>
               3D printed with Ender 3 PRO
               </Media>
@@ -215,14 +215,14 @@ function RobotProject() {
         </div>
         <div class="row row-content" style={{textAlign:"left"}}> 
           <Media body>
-            <h1><a href="/#" name = "section 4">Section IV: Baby Step, Simulation & Optimization</a></h1>
+            <h1 id="section 4">Section IV: Baby Step, Simulation & Optimization</h1>
               <Media className="paragraph">
                 I took an easy way to make my robot walk, which is hand-coding the locomotion pattern and optimizing it with hillclimbing algorithom. All motor was controlled by one simple equation A + B * sin( w * t + C ) with different time condition. Then I generated URDF file from Solidworks and imported it into Pybullet to do the simulation. At the beginning, the simulation looked floppy and sketchy. I adjusted the material properties regarding the infill percentage of 3D printed parts, the simulation looked closer to the real world physics. The Following video will show the process.
 
               </Media>
               <YoutubeEmbed embedId="dRrTST9wG3k" />   
 
-              <Media className="paragraph" href="/#">
+              <Media className="paragraph">
                 I am still working on the optimization and the future update will be posted here. Also, I am planing to remix the wireless controller as a side project to control the robot remotely, the details can be refered to my other project <a href="/#">controller remix</a>
               </Media>      
           </Media>

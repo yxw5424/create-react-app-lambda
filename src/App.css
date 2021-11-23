@@ -386,3 +386,7 @@ justify-content:space-between;}
   width: 100%;
   position: absolute;
 }
+
+.no-decoration {
+  text-decoration: none;
+}
