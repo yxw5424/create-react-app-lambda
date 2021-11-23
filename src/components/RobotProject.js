@@ -3,6 +3,9 @@ import Rowheader from './RowHeader';
 import { Media, Button } from 'reactstrap';
 import MyImage from './MyImage';
 import { SRLWrapper } from 'simple-react-lightbox';
+import YoutubeEmbed from "./YoutubeEmbed";
+
+
 
 const ref =  {
   title:"Robotics Studio",
@@ -102,7 +105,21 @@ const elements = [
     id: 12,
     autoplay: false,
     showControls: true
+  },
+  {
+    src: "Robotics/Assembbled_view.JPG",
+    alt: 'assembly',
+    id: 13,
+    autoplay: false,
+    showControls: true
+  },{
+    src: "Robotics/electronics.JPG",
+    alt: 'assembly',
+    id: 14,
+    autoplay: false,
+    showControls: true
   }
+
 ]
 
 function RobotProject() {
@@ -116,6 +133,7 @@ function RobotProject() {
           <li><a className="col-3 col-sm-12" style={{fontSize:'18px',fontWeight:'500',}}href="#section 1">Section I: Sketches</a></li>
           <li><a className=" col-3 col-sm-12" style={{fontSize:'18px',fontWeight:'500'}}href="#section 2">Section II: CAD</a></li>
           <li><a className="col-3 col-sm-12" style={{fontSize:'18px',fontWeight:'500'}}href="#section 3">Section III: 3D Printed and Assembled</a></li>
+          <li><a className="col-3 col-sm-12" style={{fontSize:'18px',fontWeight:'500'}}href="#section 4">Section IV: Baby Step & Optimizing Locomotion Pattern</a></li>
           </div>
         </nav>  
       <div className="container">
@@ -180,12 +198,33 @@ function RobotProject() {
               <Media className='subtitle'>
               3D printed with Ender 3 PRO
               </Media>
+              <Media className="paragraph">
+                3D printing of the body took almost 2 weeks to finish. To get a better timelapse, I installed a raspberrypi on my printer with Octopi OS. The cool "Octolapse" is shown below. The original CAD file was carefully built so that I did not spend much time on debugging the CAD file. But for wiring, it did spend me days to solder and measure to get the wires perfectly fit in the robot body. 
+              </Media>
               <MyImage   src={elements[11].src} alt={elements[11].alt}   className="center" style={{width:'70%'}}/>    
               <Media className="figure-caption"> Figure 11. 3D printing timelapse </Media>  
               <MyImage   src={elements[12].src} alt={elements[12].alt}   className="center" style={{width:'70%'}}/>    
-              <Media className="figure-caption"> Figure 12. Assembling legs </Media>     
+              <Media className="figure-caption"> Figure 12. Assembling legs </Media> 
+              <MyImage   src={elements[14].src} alt={elements[14].alt}   className="center" style={{width:'70%'}}/>    
+              <Media className="figure-caption"> Figure 13. Electronics installed and proper routed </Media>       
+              <MyImage   src={elements[13].src} alt={elements[13].alt}   className="center" style={{width:'70%'}}/>    
+              <Media className="figure-caption"> Figure 13. Assembled Robot </Media>     
              
                      
+          </Media>
+        </div>
+        <div class="row row-content" style={{textAlign:"left"}}> 
+          <Media body>
+            <h1><a name = "section 4">Section IV: Baby Step, Simulation & Optimization</a></h1>
+              <Media className="paragraph">
+                I took an easy way to make my robot walk, which is hand-coding the locomotion pattern and optimizing it with hillclimbing algorithom. All motor was controlled by one simple equation A + B * sin( w * t + C ) with different time condition. Then I generated URDF file from Solidworks and imported it into Pybullet to do the simulation. At the beginning, the simulation looked floppy and sketchy. I adjusted the material properties regarding the infill percentage of 3D printed parts, the simulation looked closer to the real world physics. The Following video will show the process.
+
+              </Media>
+              <YoutubeEmbed embedId="dRrTST9wG3k" />   
+
+              <Media className="paragraph">
+                I am still working on the optimization and the future update will be posted here. Also, I am planing to remix the wireless controller as a side project to control the robot remotely, the details can be refered to my other project <a>controller remix</a>
+              </Media>      
           </Media>
         </div>
 
