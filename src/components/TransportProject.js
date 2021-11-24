@@ -105,7 +105,7 @@ function TransportProject() {
               elements.map((ele)=>{
                 
                 return (
-                  <MyImage src={ele.src} alt={ele.alt} className="center" />  
+                  <MyImage src={ele.src} alt={ele.alt} className="center col-12" />  
                  
                 )
               })
