@@ -1,15 +1,9 @@
+import React from 'react';
 import { Button } from 'reactstrap';
 import MyImage from './MyImage';
 import { SRLWrapper } from 'simple-react-lightbox';
 import Rowheader from './RowHeader';
-import React, { useState } from 'react';
 
-// using CommonJS modules
-
-// using CommonJS modules
-import { Document, Page } from 'react-pdf/dist/umd/entry.webpack';
-import { pdfjs } from 'react-pdf';
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 // Create new plugin instance
 
@@ -23,7 +17,7 @@ const ref =  {
 const elements = [
   
   {
-    src: "gallery/art455.jpg",
+    src: "ME461/ME461-1.jpg",
     alt: 'sketch1',
     id: 1,
     width: 1920,
@@ -31,7 +25,7 @@ const elements = [
     showControls: true
   },
   {
-    src: "gallery/fp_portrait.jpg",
+    src: "ME461/ME461-2.jpg",
     alt: 'sketch1',
     id: 1,
     width: 1920,
@@ -39,7 +33,7 @@ const elements = [
     showControls: true
   },
   {
-    src: "gallery/gallery_avator.jpg",
+    src: "ME461/ME461-3.jpg",
     alt: 'sketch1',
     id: 1,
     width: 1920,
@@ -49,7 +43,7 @@ const elements = [
 
  
   {
-    src: "gallery/gallery_cat.jpg",
+    src: "ME461/ME461-4.jpg",
     alt: 'sketch1',
     id: 1,
     width: 1920,
@@ -57,13 +51,38 @@ const elements = [
     showControls: true
   },
   {
-    src: "gallery/gallery_car.jpg",
+    src: "ME461/ME461-5.jpg",
     alt: 'sketch1',
     id: 1,
     width: 1920,
     height: 'auto',
     showControls: true
   },
+  {
+    src: "ME461/ME461-6.jpg",
+    alt: 'sketch1',
+    id: 1,
+    width: 1920,
+    height: 'auto',
+    showControls: true
+  },
+  {
+    src: "ME461/ME461-7.jpg",
+    alt: 'sketch1',
+    id: 1,
+    width: 1920,
+    height: 'auto',
+    showControls: true
+  },
+  {
+    src: "ME461/ME461-8.jpg",
+    alt: 'sketch1',
+    id: 1,
+    width: 1920,
+    height: 'auto',
+    showControls: true
+  },
+ 
   // {
   //   src: "gallery/gallery_car1.jpg",
   //   alt: 'sketch1',
@@ -76,42 +95,6 @@ const elements = [
   
 ]
 
-function MyApp({file}) {
-  const [numPages, setNumPages] = useState(null);
-  const [pageNumber, setPageNumber] = useState(1);
-  const options = {
-    cMapUrl: 'cmaps/',
-    cMapPacked: true,
-  };
-  
-  function onDocumentLoadSuccess({ numPages }) {
-    setNumPages(numPages);
-  }
-
-  return (
-    <div className="center">
-      <Document
-            className="center"
-            file={file}
-            onLoadSuccess={onDocumentLoadSuccess}
-            options={options}
-          >
-            {
-              Array.from(
-                new Array(numPages),
-                (el, index) => (
-                  <Page
-                    key={`page_${index + 1}`}
-                    pageNumber={index + 1}
-                  />
-                ),
-              )
-            }
-          </Document>
-     
-    </div>
-  );
-}
 
 function CarbonNanotube() {
   
@@ -119,9 +102,18 @@ function CarbonNanotube() {
       <SRLWrapper elements={elements}>  
       <div className="container">
         <Rowheader title={ref.title} img={ref.img} alt={ref.alt} description={ref.description}/>
-        <div className="row row-content " style={{textAlign:"center",}}> 
-           
-           <MyApp   file="/PDFs/ME461.pdf"/>
+        <div className="col " style={{textAlign:"center",}}> 
+            { 
+              elements.map((ele)=>{
+                
+                return (
+                  
+                  <MyImage src={ele.src} alt={ele.alt} className="center col" />  
+                 
+                )
+              })
+            }
+          
         </div>
         <Button style={{margin:'30px'}} outline  color="secondary" onClick={()=>window.scrollTo(0, 0)}>Back To Top</Button>
       </div>
