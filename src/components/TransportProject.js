@@ -11,84 +11,96 @@ const elements = [
     alt: 'sketch1',
     id: 1,
     width: 1920,
-    height: 'auto'
+    height: 'auto',
+    showControls: true
   },
   {
     src: "transportation/UTOPIA2.jpg",
     alt: 'sketch1',
     id: 2,
     width: 1920,
-    height: 'auto'
+    height: 'auto',
+    showControls: true
   },
   {
     src: "transportation/UTOPIA3.jpg",
     alt: 'sketch1',
     id: 3,
     width: 1920,
-    height: 'auto'
+    height: 'auto',
+    showControls: true
   },
   {
     src: "transportation/UTOPIA4.jpg",
     alt: 'sketch1',
     id: 4,
     width: 1920,
-    height: 'auto'
+    height: 'auto',
+    showControls: true
   },
   {
     src: "transportation/UTOPIA5.jpg",
     alt: 'sketch1',
     id: 5,
     width: 1920,
-    height: 'auto'
+    height: 'auto',
+    showControls: true
   },
   {
     src: "transportation/UTOPIA6.jpg",
     alt: 'sketch1',
     id: 6,
     width: 1920,
-    height: 'auto'
+    height: 'auto',
+    showControls: true
   },
   {
     src: "transportation/UTOPIA7.jpg",
     alt: 'sketch1',
     id: 7,
     width: 1920,
-    height: 'auto'
+    height: 'auto',
+    showControls: true
   },
   {
     src: "transportation/UTOPIA8.jpg",
     alt: 'sketch1',
     id: 8,
     width: 1920,
-    height: 'auto'
+    height: 'auto',
+    showControls: true
   },
   {
     src: "transportation/UTOPIA9.jpg",
     alt: 'sketch1',
     id: 9,
     width: 1920,
-    height: 'auto'
+    height: 'auto',
+    showControls: true
   },
   {
     src: "transportation/UTOPIA10.jpg",
     alt: 'sketch1',
     id: 10,
     width: 1920,
-    height: 'auto'
+    height: 'auto',
+    showControls: true
   },
   {
     src: "transportation/UTOPIA11.jpg",
     alt: 'sketch1',
     id: 11,
     width: 1920,
-    height: 'auto'
+    height: 'auto',
+    showControls: true
   },
   {
     src: "transportation/UTOPIA12.jpg",
     alt: 'sketch1',
     id: 12,
     width: 1920,
-    height: 'auto'
+    height: 'auto',
+    showControls: true
   },
 
   
@@ -105,7 +117,7 @@ function TransportProject() {
               elements.map((ele)=>{
                 
                 return (
-                  <MyImage src={ele.src} alt={ele.alt} className="center col-12" />  
+                  <MyImage src={ele.src} alt={ele.alt} className="center col" />  
                  
                 )
               })

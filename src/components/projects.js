@@ -1,11 +1,5 @@
 const projects = [
-    {
-      id:1,
-      image:"https://picsum.photos/200/300",
-      category:"Art",
-      name:'watercolor',
-      link:'/robotproject'
-    },
+    
     {
       id:2,
       image:"lattice/phone.jpg",
@@ -27,6 +21,28 @@ const projects = [
       name:'UTOPIA',
       link:'/TransportProject'
     },
+    {
+      id:4,
+      image:"transportation/utopia.png",
+      category:"M.E",
+      name:'UTOPIA',
+      link:'/carbonnanotube'
+    },
+    {
+      id:1,
+      image:"gallery/oil_painting2.jpg",
+      category:"Art",
+      name:'Paintings',
+      link:'/watercolor'
+    },
+    {
+      id:5,
+      image:"gallery/gallery_cat.jpg",
+      category:"Art",
+      name:'Digital Paintings',
+      link:'/digitalart'
+    },
+    
 ]
 
 export default projects

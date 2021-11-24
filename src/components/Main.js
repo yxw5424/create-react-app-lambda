@@ -9,6 +9,9 @@ import LatticeProject from "./LatticeProject";
 import Journal from './Journal'
 import TransportProject from "./TransportProject";
 import { Switch, Route, Redirect } from 'react-router-dom';
+import Watercolor from "./Watercolor";
+import DigitalArt from "./DigitalArt";
+import CarbonNanotube from "./CarbonNanotube";
 
 
 class Main extends Component {
@@ -32,6 +35,9 @@ class Main extends Component {
               <Route exact path='/robotproject' component={() => <RobotProject />} />
               <Route exact path='/latticeproject' component={() => <LatticeProject />} />
               <Route exact path='/transportproject' component={() => <TransportProject />} />
+              <Route exact path='/watercolor' component={() => <Watercolor />} />
+              <Route exact path='/digitalart' component={() => <DigitalArt />} />
+              <Route exact path='/carbonnanotube' component={() => <CarbonNanotube />} />
               <Route exact path='/journal' component={() => <Journal />} />
               <Redirect to="/home" />
           </Switch>
