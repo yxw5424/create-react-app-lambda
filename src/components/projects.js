@@ -1,47 +1,47 @@
 const projects = [
     
     {
-      id:2,
+      id:'11',
       image:"lattice/phone.jpg",
       category:"M.E",
       name:'Lattice Design',
       link:'/latticeproject'
     },
     {
-      id:3,
+      id:'12',
       image:"robotics/robotcover.PNG",
       category:"M.E",
       name:'robotics studio',
       link:'/robotproject'
     },
     {
-      id:4,
+      id:'13',
       image:"transportation/utopia.png",
       category:"M.E",
       name:'UTOPIA',
       link:'/TransportProject'
     },
     {
-      id:4,
-      image:"transportation/utopia.png",
+      id:'14',
+      image:"ME461/carbon_nanotube_cover.gif",
       category:"M.E",
-      name:'UTOPIA',
+      name:'carbon nanotube',
       link:'/carbonnanotube'
     },
     {
-      id:1,
+      id:'15',
       image:"gallery/oil_painting2.jpg",
       category:"Art",
       name:'Paintings',
       link:'/watercolor'
     },
     {
-      id:5,
+      id:'16',
       image:"gallery/gallery_cat.jpg",
       category:"Art",
       name:'Digital Paintings',
       link:'/digitalart'
-    },
+    }
     
 ]
 

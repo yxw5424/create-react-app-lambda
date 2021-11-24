@@ -10,9 +10,9 @@ import Rowheader from './RowHeader';
 
 const ref =  {
     title:"Vibration Simulation of Carbon Nanotube",
-    img:"gallery/art455.jpg",
-    alt:"Digital Painting",
-    description:"Besides painting on the canvase, I enjoyed more doing it digitally! The technology nowadays has chnaged the way to create content and provide very strong functions that enable us create anything more freely. The works shown here were done for my hobbies, personal projects, or school events."
+    img:"ME461/carbon_nanotube.jpeg",
+    alt:"carbon_nanotube",
+    description:"This project is about implementing FEA method on simulation of carbon nanotube. I utilized matlab to develop a system that is close to 3D Frame. It can describe the structure and property of the carbon nanotube. The report is shown following."
   }
 const elements = [
   
@@ -102,7 +102,7 @@ function CarbonNanotube() {
       <SRLWrapper elements={elements}>  
       <div className="container">
         <Rowheader title={ref.title} img={ref.img} alt={ref.alt} description={ref.description}/>
-        <div className="col " style={{textAlign:"center",}}> 
+        <div className="row row-content " style={{textAlign:"center",}}> 
             { 
               elements.map((ele)=>{
                 

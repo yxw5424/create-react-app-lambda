@@ -6,7 +6,10 @@ import Card from './Card';
 import styled from 'styled-components';
 
 const Home = () => {
-    const categories= ['All','Art','M.E']
+    const categories= [
+      'All',
+      'Art',
+      'M.E']
 
     const [active, setActive] = useState(categories[0]);
     const [items,setItems] = useState(projects)
@@ -91,7 +94,7 @@ const Home = () => {
                             <h1>Hello, I'm Tim.</h1>
                             <h1>Engineer & Designer</h1>
                             <h1>Welcome to my Portfolio!</h1>
-                            <p class="quote">Currently available for select projects, collaborations and consulting </p>
+                            <p className="quote">Currently available for select projects, collaborations and consulting </p>
                         </div>
                     </div>
                 </div>
@@ -113,7 +116,7 @@ const Home = () => {
               <DropdownMenu >
                 {categories.map(cate=>(
                   <DropdownItem 
-                  
+                  key={cate}
                   onClick={ () => 
                     {
                       if (cate === "All"){
@@ -139,8 +142,11 @@ const Home = () => {
                   {
                     items.map((project)=>{
                       const { id, image, category, name, link } = project;
+                      
                       return (
-                        <Card key={id}
+                        
+                        <Card 
+                          key={id}
                           image={image}
                           category={category}
                           name={name}
