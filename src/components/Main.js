@@ -7,7 +7,7 @@ import About from "./About";
 import RobotProject from "./RobotProject";
 import LatticeProject from "./LatticeProject";
 import Journal from './Journal'
-
+import TransportProject from "./TransportProject";
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 
@@ -15,7 +15,7 @@ class Main extends Component {
   
   render() {
     const HomePage = () => {
-        return(
+        return( 
             <Home 
             />
         );
@@ -31,6 +31,7 @@ class Main extends Component {
               <Route exact path='/about' component={() => <About />} />
               <Route exact path='/robotproject' component={() => <RobotProject />} />
               <Route exact path='/latticeproject' component={() => <LatticeProject />} />
+              <Route exact path='/transportproject' component={() => <TransportProject />} />
               <Route exact path='/journal' component={() => <Journal />} />
               <Redirect to="/home" />
           </Switch>

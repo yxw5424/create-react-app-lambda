@@ -9,111 +9,111 @@ import YoutubeEmbed from "./YoutubeEmbed";
 
 const ref =  {
   title:"Robotics Studio",
-  img:"Robotics/robot_cover_img.jpeg",
+  img:"robotics/robot_cover_img.jpeg",
   alt:"latticephonecase",
   description:"In this project, I built a walking and dancing robot with 8 motors from sketch to final assembly. CAD modeling was done by Solidworks and rendered in Keyshot. To Train my robot to walk I used pybullet to build a environment and trained in gym library with DDPG agent. Besides the trainning, I designed the locomotion pattern for my robot to walk, and optimized it by hillclimbing algorithom. The details are shown below. "
 }
 
 const elements = [
   {
-    src: "Robotics/sketch1.jpg",
+    src: "robotics/sketch1.jpg",
     alt: 'sketch1',
     id: 1,
     width: 1920,
     height: 'auto'
   },
   {
-    src: "Robotics/sketch3.jpg",
+    src: "robotics/sketch3.jpg",
     alt: 'sketch3',
     id:2,
     width: 1024,
     height: 'auto'
   },
   {
-    src: "Robotics/sketch2.jpg",
+    src: "robotics/sketch2.jpg",
     alt: 'sketch2',
     id: 3,
     autoplay: false,
     showControls: true
   },
   {
-    src: "Robotics/sketch4.jpg",
+    src: "robotics/sketch4.jpg",
     alt: 'sketch4',
     id: 4,
     autoplay: false,
     showControls: true
   },
   {
-    src: "Robotics/preliminary_design.JPG",
+    src: "robotics/preliminary_design.JPG",
     alt: 'general view',
     id: 5,
     autoplay: false,
     showControls: true
   },
   {
-    src: "Robotics/explode_view.PNG",
+    src: "robotics/explode_view.PNG",
     alt: 'explode view',
     id: 6,
     autoplay: false,
     showControls: true
   },
   {
-    src: "Robotics/close_up_view.JPG",
+    src: "robotics/close_up_view.JPG",
     alt: 'close up view',
     id: 7,
     autoplay: false,
     showControls: true
   },
   {
-    src: "Robotics/BOM.JPG",
+    src: "robotics/BOM.JPG",
     alt: 'BOM',
     id: 8,
     autoplay: false,
     showControls: true
   },
   {
-    src: "Robotics/robotrender1.png",
+    src: "robotics/robotrender1.png",
     alt: 'BOM',
     id: 9,
     autoplay: false,
     showControls: true
   },
   {
-    src: "Robotics/robotrender2.jpeg",
+    src: "robotics/robotrender2.jpeg",
     alt: 'BOM',
     id: 10,
     autoplay: false,
     showControls: true
   },
   {
-    src: "Robotics/robotrender3.jpeg",
+    src: "robotics/robotrender3.jpeg",
     alt: 'BOM',
     id: 11,
     autoplay: false,
     showControls: true
   },
   {
-    src: "Robotics/printlapse.gif",
+    src: "robotics/printlapse.gif",
     alt: 'timelapse',
     id: 12,
     autoplay: false,
     showControls: true
   },
   {
-    src: "Robotics/assembly.gif",
+    src: "robotics/assembly.gif",
     alt: 'assembly',
     id: 12,
     autoplay: false,
     showControls: true
   },
   {
-    src: "Robotics/Assembbled_view.JPG",
+    src: "robotics/Assembbled_view.JPG",
     alt: 'assembly',
     id: 13,
     autoplay: false,
     showControls: true
   },{
-    src: "Robotics/electronics.JPG",
+    src: "robotics/electronics.JPG",
     alt: 'assembly',
     id: 14,
     autoplay: false,

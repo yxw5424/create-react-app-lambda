@@ -1,86 +1,106 @@
 export const photos = [
     {
-      src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
-      width: 4,
-      height: 2
-    },
-    {
-      src: "https://source.unsplash.com/Dm-qxdynoEc/800x799",
+      src: "/gallery/controller.jpg",
       width: 1,
       height: 1
     },
     {
-      src: "https://source.unsplash.com/qDkso9nvCg0/600x799",
+      src: "/gallery/cssa.png",
       width: 3,
       height: 4
     },
     {
-      src: "https://source.unsplash.com/iecJiKe_RNg/600x799",
+      src: "/gallery/fp_portrait.jpg",
       width: 3,
       height: 4
     },
     {
-      src: "https://source.unsplash.com/epcsn8Ed8kY/600x799",
+      src: "/gallery/art455.jpg",
       width: 3,
       height: 4
     },
     {
-      src: "https://source.unsplash.com/NQSWvyVRIJk/800x599",
+      src: "/gallery/gallery_avator.jpg",
       width: 4,
       height: 3
     },
     {
-      src: "https://source.unsplash.com/zh7GEuORbUw/600x799",
+      src: "/gallery/gallery_car.jpg",
       width: 3,
       height: 4
     },
     {
-      src: "https://source.unsplash.com/PpOHJezOalU/800x599",
+      src: "/gallery/gallery_car1.jpg",
       width: 4,
       height: 3
     },
     {
-      src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
+      src: "/gallery/gallery_car2.jpg",
       width: 4,
       height: 3
     },
     {
-      src: "https://source.unsplash.com/XiDA78wAZVw/600x799",
+      src: "/gallery/gallery_car4.jpg",
       width: 3,
       height: 4
     },
     {
-      src: "https://source.unsplash.com/x8xJpClTvR0/800x599",
+      src: "/gallery/gallery_cat.jpg",
       width: 4,
       height: 3
     },
     {
-      src: "https://source.unsplash.com/u9cG4cuJ6bU/4927x1000",
+      src: "/gallery/gallery_robot.jpg",
       width: 4927,
       height: 1000
     },
     {
-      src: "https://source.unsplash.com/qGQNmBE7mYw/800x599",
+      src: "/gallery/gallery_robot1.jpg",
       width: 4,
       height: 3
     },
     {
-      src: "https://source.unsplash.com/NuO6iTBkHxE/800x599",
+      src: "/gallery/oil_painting1.jpg",
       width: 4,
       height: 3
     },
     {
-      src: "https://source.unsplash.com/pF1ug8ysTtY/600x400",
+      src: "/gallery/tu1.jpg",
       width: 4,
       height: 3
     },
     {
-      src: "https://source.unsplash.com/A-fubu9QJxE/800x533",
+      src: "/gallery/tu2.jpg",
       width: 4,
       height: 3
     },
     {
-      src: "https://source.unsplash.com/5P91SF0zNsI/740x494",
+      src: "/gallery/tu3.jpg",
+      width: 4,
+      height: 3
+    },
+    {
+      src: "/gallery/tu4.jpeg",
+      width: 4,
+      height: 3
+    },
+    {
+      src: "/gallery/tu5.jpeg",
+      width: 4,
+      height: 3
+    },
+    {
+      src: "/gallery/water_color1.jpeg",
+      width: 4,
+      height: 3
+    },
+    {
+      src: "/gallery/water_color2.jpeg",
+      width: 4,
+      height: 3
+    },
+    {
+      src: "/gallery/water_color3.jpeg",
       width: 4,
       height: 3
     }
