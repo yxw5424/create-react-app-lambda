@@ -108,7 +108,7 @@ function CarbonNanotube() {
                 
                 return (
                   
-                  <MyImage src={ele.src} alt={ele.alt} className="center col" />  
+                  <MyImage src={ele.src} alt={ele.alt} className="center col-12 " />  
                  
                 )
               })
