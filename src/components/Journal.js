@@ -1,41 +1,48 @@
-import React from 'react';
+import React,{ useState} from 'react';
+import { Button } from 'reactstrap';
+import LoadPDF from './LoadPDF';
 
-const week1 = {
-  Title:'Robot Studio - Sketch',
-  Description:'In this project, we are required to build a walking robot but limited with 8 moters, so I did some researches and hand sketches, which ars shown here. For the next step, I am going to do a preliminary CAD model for my robot'
-}
-
-const Image =({src}) => {
-  return(
-    <div className="col-12 col-sm-12 col-md-6" >
-      <div className="card-content" >          
-        <img src={src } alt={src}/>
-      </div>
-    </div>
-  )
-}
-
-const Description=({Description,Title})=>{
-  return(
-    <div className="col-12 col-sm-12 col-md-6">
-      <div className="container" >          
-        <h1 className="about-title">{Title}</h1>
-        <div className="about-container">
-        <p className="about-para">{Description}</p>
-        </div>
-      </div>
-    </div>
-  )
-}
-
+const projects=[
+  {
+    projectName: 'Topology Optimization',
+    projectFile:'PDFs/topology_report.pdf'
+  },
+  {
+    projectName:'Puzzle Box',
+    projectFile:'PDFs/Final.pdf'
+  },
+  {
+    projectName:'Climbing Wall Delivery Robot',
+    projectFile:'PDFs/ClimbingWallRobot.pdf'
+  },
+  {
+    projectName:'Lampshade Design',
+    projectFile:'PDFs/lampshade_report.pdf'
+  },
+]
 
 function Journal() {
+    const [project,setProject]=useState(projects[0].projectFile)
     return(
-      <div className="container" style={{paddingTop:"50px", paddingBottom:"50px"}}>
-        <div className="row">
-          <Image src={"Robotics/BUZZ-BOT_SKETCHES.png"} />
-          <Description Description={week1.Description} Title={week1.Title}/>
+      <div className="container" >
+        <nav className="floating-menu" style={{height:"80px"}}>
+          <div className="nav">
+            <ul className='row'>
+              { projects.map((ele)=>{
+                const { projectName,projectFile } = ele;
+                return (
+                <li className="col-3 col-sm-3"><button style={{fontWeight: projectFile === project ? "bold" : "300" , fontSize: "10pt"}}className="button" onClick={()=>setProject(projectFile)}>{projectName}</button></li>
+              )
+              })}
+            </ul>
+          </div>
+        </nav> 
+   
+
+        <div style={{paddingTop:'80px'}}> 
+          <LoadPDF  file = {project} isScroll={true}/>
         </div>
+        <Button style={{margin:'30px'}} outline  color="secondary" onClick={()=>window.scrollTo(0, 0)}>Back To Top</Button>
       </div>
     );
 }

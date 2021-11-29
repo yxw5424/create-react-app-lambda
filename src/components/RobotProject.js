@@ -129,7 +129,7 @@ function RobotProject() {
        
         <nav class="floating-menu">
           <div className="nav">
-          <h3 style={{alignSelf:'center'}}>Floating Menu</h3>
+            
           <li><a className="col-3 col-sm-12" style={{fontSize:'18px',fontWeight:'500',}} href="#section 1">Section I: Sketches</a></li>
           <li><a className=" col-3 col-sm-12" style={{fontSize:'18px',fontWeight:'500'}} href="#section 2">Section II: CAD</a></li>
           <li><a className="col-3 col-sm-12" style={{fontSize:'18px',fontWeight:'500'}} href="#section 3">Section III: 3D Printed and Assembled</a></li>

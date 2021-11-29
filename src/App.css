@@ -363,6 +363,8 @@ justify-content:space-between;}
   width: auto;
   z-index: 100;
   position: fixed;
+  
+
 }
 .floating-menu a, 
 .floating-menu h3 {
@@ -391,3 +393,38 @@ justify-content:space-between;}
   text-decoration: none;
 }
 
+.button {
+  background-color: transparent; /* Green */
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: whtie;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.horicenter {
+  margin: auto;
+    
+  
+}
