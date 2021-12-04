@@ -223,7 +223,7 @@ function RobotProject() {
               <YoutubeEmbed embedId="dRrTST9wG3k" />   
 
               <Media className="paragraph">
-                I am still working on the optimization and the future update will be posted here. Also, I am planing to remix the wireless controller as a side project to control the robot remotely, the details can be refered to my other project <a href="http://localhost:3000/controller_remix">controller remix</a>
+                I am still working on the optimization and the future update will be posted here. Also, I am planing to remix the wireless controller as a side project to control the robot remotely, the details can be refered to my other project <a href="/controller_remix">controller remix</a>
               </Media>      
           </Media>
         </div>
