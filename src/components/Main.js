@@ -13,6 +13,7 @@ import Watercolor from "./Watercolor";
 import DigitalArt from "./DigitalArt";
 import CarbonNanotube from "./CarbonNanotube";
 import TransportationDesign from "./TransportationDesign";
+import Controller from "./Controller";
 
 
 class Main extends Component {
@@ -40,6 +41,7 @@ class Main extends Component {
               <Route exact path='/digitalart' component={() => <DigitalArt />} />
               <Route exact path='/carbonnanotube' component={() => <CarbonNanotube />} />
               <Route exact path='/transportationdesign' component={() => <TransportationDesign />} />
+              <Route exact path='/controller_remix' component={() => <Controller />} />
               <Route exact path='/journal' component={() => <Journal />} />
               <Redirect to="/home" />
           </Switch>

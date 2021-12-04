@@ -46,7 +46,7 @@ class Header extends Component {
                     <div className="container">
                         
                         <NavbarBrand className="mr-auto brand" href="/" style={{minWidth: '100px', fontSize:'20pt', fontWeight:'bold', marginLeft:"40px"}}>
-                            Tim Wang
+                            Yufan Wang
                         </NavbarBrand>
                         
                         <NavbarToggler onClick={this.toggle} />

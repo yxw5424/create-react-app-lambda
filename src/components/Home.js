@@ -8,8 +8,8 @@ import styled from 'styled-components';
 const Home = () => {
     const categories= [
       'All',
-      'Art',
-      'M.E']
+      'M.E',
+      'Art']
 
     const [active, setActive] = useState(categories[0]);
     const [items,setItems] = useState(projects)
@@ -91,7 +91,7 @@ const Home = () => {
                 <div className="row row-header">
                     <div className="col-12 col-sm-8" style={{textAlign:"left"}}>
                         <div className="container">
-                            <h1>Hello, I'm Tim.</h1>
+                            <h1>Hello, I'm Yufan.</h1>
                             <h1>Engineer & Designer</h1>
                             <h1>Welcome to my Portfolio!</h1>
                             <p className="quote">Currently available for select projects, collaborations and consulting </p>

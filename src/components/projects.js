@@ -1,19 +1,20 @@
 const projects = [
+  {
+    id:'11',
+    image:"robotics/robotcover.PNG",
+    category:"M.E",
+    name:'robotics studio',
+    link:'/robotproject'
+  },
+  {
+    id:'12',
+    image:"controller/controller_cover.jpg",
+    category:"M.E",
+    name:'controller remix',
+    link:'/controller_remix'
+  },
     
-    {
-      id:'11',
-      image:"lattice/phone.jpg",
-      category:"M.E",
-      name:'Lattice Design',
-      link:'/latticeproject'
-    },
-    {
-      id:'12',
-      image:"robotics/robotcover.PNG",
-      category:"M.E",
-      name:'robotics studio',
-      link:'/robotproject'
-    },
+    
     {
       id:'13',
       image:"transportation/utopia.png",
@@ -48,7 +49,14 @@ const projects = [
       category:"M.E",
       name:'Transportation Design',
       link:'/transportationdesign'
-    }
+    },
+    {
+      id:'18',
+      image:"lattice/phone.jpg",
+      category:"M.E",
+      name:'Lattice Design',
+      link:'/latticeproject'
+    },
     
 ]
 
