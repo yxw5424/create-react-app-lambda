@@ -41,6 +41,13 @@ const projects = [
       category:"Art",
       name:'Digital Paintings',
       link:'/digitalart'
+    },
+    {
+      id:'17',
+      image:"transportationPortfolio/TransportationDesignPortfolio-1.jpg",
+      category:"M.E",
+      name:'Transportation Design',
+      link:'/transportationdesign'
     }
     
 ]

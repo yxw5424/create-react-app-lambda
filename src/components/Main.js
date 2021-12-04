@@ -12,6 +12,7 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import Watercolor from "./Watercolor";
 import DigitalArt from "./DigitalArt";
 import CarbonNanotube from "./CarbonNanotube";
+import TransportationDesign from "./TransportationDesign";
 
 
 class Main extends Component {
@@ -38,6 +39,7 @@ class Main extends Component {
               <Route exact path='/watercolor' component={() => <Watercolor />} />
               <Route exact path='/digitalart' component={() => <DigitalArt />} />
               <Route exact path='/carbonnanotube' component={() => <CarbonNanotube />} />
+              <Route exact path='/transportationdesign' component={() => <TransportationDesign />} />
               <Route exact path='/journal' component={() => <Journal />} />
               <Redirect to="/home" />
           </Switch>
