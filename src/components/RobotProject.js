@@ -126,7 +126,7 @@ function RobotProject() {
   
     return(
       <SRLWrapper elements={elements}>
-       
+        
         <nav class="floating-menu">
           <div className="nav">
             
@@ -138,7 +138,12 @@ function RobotProject() {
         </nav>  
       <div className="container">
         <Rowheader title={ref.title} img={ref.img} alt={ref.alt} description={ref.description}/>
-        
+        <div class="row row-content " style={{textAlign:"left",}}> 
+          <Media body>
+            <h1 id="section 1">Journey Video</h1>
+            <YoutubeEmbed embedId="RNJuoQ85x0Y" />   
+          </Media>
+        </div>
         <div class="row row-content " style={{textAlign:"left",}}> 
           <Media body>
             <h1 id="section 1">Section I: Sketches</h1>
