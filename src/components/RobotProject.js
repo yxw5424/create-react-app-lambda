@@ -141,7 +141,7 @@ function RobotProject() {
         <div class="row row-content " style={{textAlign:"left",}}> 
           <Media body>
             <h1 id="section 1">Journey Video</h1>
-            <YoutubeEmbed embedId="RNJuoQ85x0Y" />   
+            <YoutubeEmbed embedId="zkT_060TTCc" />   
           </Media>
         </div>
         <div class="row row-content " style={{textAlign:"left",}}> 
